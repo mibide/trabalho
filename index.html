@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo - Conhecimentos Gerais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1 class="quiz-title">🧠 Quiz Interativo</h1>
+            <p>Teste seus conhecimentos gerais!</p>
+        </header>
+
+        <div id="quiz-area">
+            <div class="quiz-stats">
+                <div class="stat-item">
+                    <div class="stat-label">Pergunta</div>
+                    <div class="stat-value" id="current-question">1</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Pontuação</div>
+                    <div class="stat-value" id="current-score">0</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Recorde</div>
+                    <div class="stat-value" id="best-score">0</div>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <div class="question-container">
+                <h2 class="question-text" id="question-text"></h2>
+                <div class="alternatives-container" id="alternatives-container"></div>
+            </div>
+
+            <div class="buttons-container">
+                <button class="btn btn-primary" id="next-btn" disabled>Próxima</button>
+                <button class="btn btn-secondary" id="restart-btn">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="results-area" class="results-container hidden">
+            <h2>🎉 Quiz Finalizado!</h2>
+            <div class="final-score" id="final-score"></div>
+            <div class="score-message" id="score-message"></div>
+            <div class="best-score" id="best-score-display"></div>
+            <div class="buttons-container">
+               
+                <button class="btn btn-primary" id="play-again-btn">Jogar Novamente</button>
+                    <button class="btn btn-secondary" id="restart-btn">reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
